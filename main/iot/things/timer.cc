@@ -19,12 +19,14 @@ public:
                 return running;
         });
         methods_.AddMethod("StartTimer", "Start or set a timer", ParameterList({
-            Parameter("duration", "Timer duration in seconds as an integer", kValueTypeNumber, true)
+            Parameter("duration", "Timer duration in seconds as a whole number integer", kValueTypeNumber, true)
         }), [this](const ParameterList& parameters) {
                 // start a timer and make a noise
-           int duration = static_cast<uint8_t>(parameters["duration"].number()); 
+           int duration = static_cast<int>(parameters["duration"].number()); 
            auto& app = Application::GetInstance();
-           app.SetDeviceState(kDeviceStateIdle);
+           // We don't want to listen etc, but we also don't want to go to sleep
+           app.SetDeviceState(kDeviceStateUnknown);
+           
 
            ESP_LOGI(TAG, "Starting timer for %d seconds", duration);
 
@@ -34,8 +36,9 @@ public:
 
            ESP_LOGI(TAG, "Done");
 
-           app.StopListening();
            app.Alert(Lang::Strings::INFO, "Timer finished", "happy", Lang::Sounds::P3_SUCCESS); 
+           app.SetDeviceState(kDeviceStateIdle);
+
            ESP_LOGI(TAG, "Done");
         });
     }
