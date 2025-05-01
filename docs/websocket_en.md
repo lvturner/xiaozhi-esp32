@@ -1,25 +1,3 @@
-<details type="reasoning" done="true" duration="13">
-<summary>Thought for 13 seconds</summary>
-> Okay, I need to translate this technical document from Chinese to English. Let me start by reading through the entire text to understand the context and technical terms. The document is about a protocol for a WebSocket-based communication system involving JSON messages and Opus audio frames. It covers handshake, audio streaming, STT, TTS, IoT commands, error handling, and other details.
-> 
-> First, I'll go through each section one by one. The title is "Protocol Documentation," so I'll translate that. Then, the sections like "Translation" might be a typo, but looking at the original, it's actually "Translate" as part of the user's request. Wait, no, the user provided the Chinese text and wants it translated. So the entire content is in Chinese, and I need to translate it into English.
-> 
-> I need to be careful with technical terms. For example, "WebSocket" should stay as is. Terms like "鉴权" are "authentication," "会话控制" is "session control," "错误处理" is "error handling," etc. Some terms like "Opus" are proper nouns and should remain the same.
-> 
-> I'll start translating each section. The user provided the Chinese text, so I need to make sure that the translation is accurate. For example, the first line after the title is "Translate this document," which the user wants translated. But the actual content is the document itself. Wait, no. The user provided the Chinese text, which is the document they want translated. So the entire text from "Protocol Documentation" onwards is the content to be translated.
-> 
-> I need to maintain the structure, including the numbered sections and bullet points. For example, "1. 传输" becomes "1. Transmission," but in the original, it's "传输" which is "Transmission." However, in the user's provided text, the first line after the title is "Translate this document," which might be a mistake. Wait, looking at the user's message, they said "Translate this document" as the first line, but the actual content is the Chinese text. Maybe the user intended to provide the Chinese text for translation. So the entire text from "Protocol Documentation" down is the content to translate.
-> 
-> I'll proceed to translate each section, ensuring that technical terms are correctly rendered. For example, "会话" becomes "session," "IoT指令" becomes "IoT commands," "错误日志" becomes "error logs." I'll also check for consistency in terminology throughout the translation.
-> 
-> Another thing to watch for is the JSON examples. The keys like "session_id," "type," "state," etc., should remain in English. The values might need translation if they are in Chinese, but in the examples, they are in English. For instance, "state": "start" remains as is.
-> 
-> I'll also check for proper nouns like "ESP_LOGE" which is a macro in ESP-IDF, so it should stay as is. "TAG" is a variable name, so it remains.
-> 
-> I need to ensure that the translated document maintains the original structure, including headers, bullet points, and code blocks. For example, the "消息示例" section has examples in JSON, which should be preserved with proper indentation and syntax.
-> 
-> After translating each section, I'll review the entire document to ensure that the flow is correct, technical terms are consistent, and that all information is accurately conveyed in English without losing the original meaning. I'll also check for any grammatical errors or awkward phrasings that might arise during the translation process.
-</details>
 **Protocol Documentation**
 
 **1. Transmission**  
